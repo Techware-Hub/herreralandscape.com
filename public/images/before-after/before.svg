@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Before">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#75451f"/>
+      <stop offset="1" stop-color="#d7cbb5"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <!-- rolling hills -->
+  <path d="M0 576 Q 300 480 600 560 T 1200 544 V 800 H 0 Z" fill="#000" opacity="0.10"/>
+  <path d="M0 656 Q 360 576 720 656 T 1200 640 V 800 H 0 Z" fill="url(#ground)"/>
+  <!-- sun/moon accent -->
+  <circle cx="983.9999999999999" cy="192" r="56.00000000000001" fill="#f5f1e7" opacity="0.10"/>
+  <!-- logo-echo: lavender flower spikes -->
+  <g opacity="0.5">
+    <rect x="144" y="496" width="14.4" height="128" fill="#88628d" opacity="0.5"/>
+    <ellipse cx="151.2" cy="480" rx="21.599999999999998" ry="40" fill="#88628d"/>
+    <rect x="192" y="528" width="14.4" height="96" fill="#88628d" opacity="0.5"/>
+    <ellipse cx="199.20000000000002" cy="512" rx="18" ry="32" fill="#88628d"/>
+  </g>
+  <!-- logo-echo: cream flower cluster -->
+  <g opacity="0.6">
+    <circle cx="1056" cy="560" r="11.200000000000001" fill="#f5f1e7"/>
+    <circle cx="1080" cy="544" r="9.6" fill="#f5f1e7"/>
+    <circle cx="1038" cy="548" r="8.799999999999999" fill="#f5f1e7"/>
+  </g>
+  <!-- label -->
+  <text x="50%" y="47%" text-anchor="middle" font-family="Georgia, serif" font-size="57" fill="#ffffff" opacity="0.96" font-weight="600">Before</text>
+  <text x="50%" y="47%" dy="54.15" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" fill="#ffffff" opacity="0.7" letter-spacing="2">OVERGROWN YARD</text>
+  <text x="50%" y="94%" text-anchor="middle" font-family="Arial, sans-serif" font-size="24.65" fill="#ffffff" opacity="0.55" letter-spacing="3">HERRERA LANDSCAPE • PLACEHOLDER</text>
+</svg>

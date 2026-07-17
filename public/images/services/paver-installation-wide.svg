@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-label="Paver Installation">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4c321e"/>
+      <stop offset="1" stop-color="#75451f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#g)"/>
+  <!-- rolling hills -->
+  <path d="M0 504 Q 400 420 800 489.99999999999994 T 1600 476.00000000000006 V 700 H 0 Z" fill="#000" opacity="0.10"/>
+  <path d="M0 574 Q 480 504 960 574 T 1600 560 V 700 H 0 Z" fill="url(#ground)"/>
+  <!-- sun/moon accent -->
+  <circle cx="1312" cy="168" r="49.00000000000001" fill="#f5f1e7" opacity="0.10"/>
+  <!-- logo-echo: lavender flower spikes -->
+  <g opacity="0.5">
+    <rect x="192" y="434" width="19.2" height="112" fill="#88628d" opacity="0.5"/>
+    <ellipse cx="201.6" cy="420" rx="28.799999999999997" ry="35" fill="#88628d"/>
+    <rect x="256" y="462" width="19.2" height="84" fill="#88628d" opacity="0.5"/>
+    <ellipse cx="265.6" cy="448" rx="24" ry="28" fill="#88628d"/>
+  </g>
+  <!-- logo-echo: cream flower cluster -->
+  <g opacity="0.6">
+    <circle cx="1408" cy="489.99999999999994" r="9.8" fill="#f5f1e7"/>
+    <circle cx="1440" cy="476.00000000000006" r="8.4" fill="#f5f1e7"/>
+    <circle cx="1384" cy="479.50000000000006" r="7.699999999999999" fill="#f5f1e7"/>
+  </g>
+  <!-- label -->
+  <text x="50%" y="47%" text-anchor="middle" font-family="Georgia, serif" font-size="50" fill="#ffffff" opacity="0.96" font-weight="600">Paver Installation</text>
+  <text x="50%" y="47%" dy="47.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#ffffff" opacity="0.7" letter-spacing="2">SERVICE</text>
+  <text x="50%" y="94%" text-anchor="middle" font-family="Arial, sans-serif" font-size="21.25" fill="#ffffff" opacity="0.55" letter-spacing="3">HERRERA LANDSCAPE • PLACEHOLDER</text>
+</svg>

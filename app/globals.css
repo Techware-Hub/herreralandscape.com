@@ -1,26 +1,203 @@
 @import "tailwindcss";
 
+/*
+  ─────────────────────────────────────────────────────────────
+  Herrera Landscape — visual identity derived from the brand logo
+  ─────────────────────────────────────────────────────────────
+  The logo is the source of truth for this design system:
+    • Deep forest-green slab-serif wordmark  → greens + serif display font
+    • Wood fence & stake dividers            → wood/soil browns, divider motif
+    • Cream stone pathway & flowers          → warm cream / sand surfaces
+    • Moss & olive foliage                   → secondary greens
+    • Lavender flower spikes                 → muted-lavender floral accent
+    • Dark soil / charcoal shading           → charcoal text & depth
+
+  Numbered scales below are re-based on the exact logo colors so every
+  existing utility (bg-forest-600, text-grass-500, border-stone-200 …)
+  renders a logo-derived color. Semantic tokens (bg-forest-green,
+  text-muted-lavender, bg-warm-cream …) are also exposed for direct use.
+*/
+
+@theme {
+  /* ── Exact logo colors as semantic tokens ───────────────────── */
+  --color-forest-green: #102d18;
+  --color-deep-green: #183b21;
+  --color-moss-green: #526f16;
+  --color-olive-green: #758817;
+  --color-grass-green: #365f17;
+  --color-wood-brown: #75451f;
+  --color-soil-brown: #4c321e;
+  --color-stone-beige: #d7cbb5;
+  --color-warm-cream: #f5f1e7;
+  --color-soft-sand: #e9dfcd;
+  --color-charcoal: #1c211b;
+  --color-muted-lavender: #88628d;
+
+  /* ── Forest (primary deep green) ────────────────────────────── */
+  --color-forest-50: #eef3ec;
+  --color-forest-100: #d9e4d2;
+  --color-forest-200: #b7cbaa;
+  --color-forest-300: #8fae7e;
+  --color-forest-400: #5f8a4a;
+  --color-forest-500: #3d6a2a;
+  --color-forest-600: #2b5320;
+  --color-forest-700: #183b21;
+  --color-forest-800: #102d18;
+  --color-forest-900: #0c2213;
+  --color-forest-950: #07160c;
+
+  /* ── Grass / moss / olive (secondary greens) ────────────────── */
+  --color-grass-50: #f4f7e8;
+  --color-grass-100: #e7efca;
+  --color-grass-200: #d2e09d;
+  --color-grass-300: #b6cd6a;
+  --color-grass-400: #97b23c;
+  --color-grass-500: #758817;
+  --color-grass-600: #526f16;
+  --color-grass-700: #445c14;
+  --color-grass-800: #365f17;
+  --color-grass-900: #2c3e10;
+
+  /* ── Earth (wood + soil brown) ──────────────────────────────── */
+  --color-earth-50: #f5ede4;
+  --color-earth-100: #e8d9c7;
+  --color-earth-200: #d4ba9d;
+  --color-earth-300: #bd9670;
+  --color-earth-400: #9c6a3d;
+  --color-earth-500: #75451f;
+  --color-earth-600: #613a1c;
+  --color-earth-700: #4c321e;
+  --color-earth-800: #40291a;
+  --color-earth-900: #362317;
+
+  /* ── Stone (warm greige neutrals from soil + stone) ─────────── */
+  --color-stone-50: #f7f4ee;
+  --color-stone-100: #efe9dd;
+  --color-stone-200: #ddd4c2;
+  --color-stone-300: #c6b9a1;
+  --color-stone-400: #9f927b;
+  --color-stone-500: #7c705c;
+  --color-stone-600: #5f5646;
+  --color-stone-700: #4a4238;
+  --color-stone-800: #38332b;
+  --color-stone-900: #2a2721;
+  --color-stone-950: #1c211b;
+
+  /* ── Beige (cream / sand surfaces) ──────────────────────────── */
+  --color-beige-50: #f5f1e7;
+  --color-beige-100: #ede6d6;
+  --color-beige-200: #e9dfcd;
+
+  /* ── Lavender (floral accent — use sparingly) ───────────────── */
+  --color-lavender-100: #ece2ee;
+  --color-lavender-200: #d8c5db;
+  --color-lavender-300: #bd9dc2;
+  --color-lavender-400: #a17ea7;
+  --color-lavender-500: #88628d;
+  --color-lavender-600: #6f4f74;
+  --color-lavender-700: #59405d;
+
+  /* Legacy "gold" tokens re-based to warm stone/sand so existing
+     usages read as premium cream rather than yellow gold. */
+  --color-gold-300: #e6dbc4;
+  --color-gold-400: #d7cbb5;
+  --color-gold-500: #c6b58c;
+  --color-gold-600: #a8935f;
+
+  --color-charcoal: #1c211b;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-zilla);
+
+  --radius-4xl: 2rem;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f1e7;
+  --foreground: #1c211b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), Georgia, "Times New Roman", serif;
+    letter-spacing: -0.01em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  /* Accessible focus ring — forest green */
+  :focus-visible {
+    outline: 2px solid var(--color-forest-600);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--color-moss-green);
+    color: var(--color-warm-cream);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Page container helper */
+.container-page {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-page {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+/* Hide scrollbar for horizontal filter rows while keeping scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle paper-grain / organic texture for warm sections */
+.texture-canvas {
+  background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(76, 50, 30, 0.06) 1px,
+      transparent 0
+    );
+  background-size: 22px 22px;
 }

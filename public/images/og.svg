@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Herrera Landscape">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#102d18"/>
+      <stop offset="1" stop-color="#2b5320"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <!-- rolling hills -->
+  <path d="M0 453.59999999999997 Q 300 378 600 441 T 1200 428.40000000000003 V 630 H 0 Z" fill="#000" opacity="0.10"/>
+  <path d="M0 516.6 Q 360 453.59999999999997 720 516.6 T 1200 504 V 630 H 0 Z" fill="url(#ground)"/>
+  <!-- sun/moon accent -->
+  <circle cx="983.9999999999999" cy="151.2" r="44.1" fill="#f5f1e7" opacity="0.10"/>
+  <!-- logo-echo: lavender flower spikes -->
+  <g opacity="0.5">
+    <rect x="144" y="390.6" width="14.4" height="100.8" fill="#88628d" opacity="0.5"/>
+    <ellipse cx="151.2" cy="378" rx="21.599999999999998" ry="31.5" fill="#88628d"/>
+    <rect x="192" y="415.8" width="14.4" height="75.6" fill="#88628d" opacity="0.5"/>
+    <ellipse cx="199.20000000000002" cy="403.2" rx="18" ry="25.2" fill="#88628d"/>
+  </g>
+  <!-- logo-echo: cream flower cluster -->
+  <g opacity="0.6">
+    <circle cx="1056" cy="441" r="8.82" fill="#f5f1e7"/>
+    <circle cx="1080" cy="428.40000000000003" r="7.5600000000000005" fill="#f5f1e7"/>
+    <circle cx="1038" cy="431.55" r="6.93" fill="#f5f1e7"/>
+  </g>
+  <!-- label -->
+  <text x="50%" y="47%" text-anchor="middle" font-family="Georgia, serif" font-size="45" fill="#ffffff" opacity="0.96" font-weight="600">Herrera Landscape</text>
+  <text x="50%" y="47%" dy="42.75" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#ffffff" opacity="0.7" letter-spacing="2">LANDSCAPING &amp; HARDSCAPING — SUNNYVALE, CA</text>
+  <text x="50%" y="94%" text-anchor="middle" font-family="Arial, sans-serif" font-size="19.55" fill="#ffffff" opacity="0.55" letter-spacing="3">HERRERA LANDSCAPE • PLACEHOLDER</text>
+</svg>
