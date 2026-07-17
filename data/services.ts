@@ -27,8 +27,14 @@ export const services: Service[] = [
     description:
       "From concept to completion, our landscaping service transforms yards into functional, beautiful outdoor spaces. We plan layouts, select the right plants for the Bay Area climate, and build landscapes designed to thrive and mature gracefully.",
     icon: Trees,
-    image: "/images/services/landscaping.svg",
-    imageWide: "/images/services/landscaping-wide.svg",
+    image: "/assets/images/services/residential-landscape-design.webp",
+    heroImage: "/assets/images/services/landscaping-hero.webp",
+    gallery: [
+      "/assets/images/projects/front-yard-landscaping.webp",
+      "/assets/images/projects/backyard-transformation.webp",
+    ],
+    imageAlt:
+      "Thoughtfully designed residential front yard with a lawn, garden beds, and a pathway",
     includes: [
       "Custom landscape design and layout",
       "Soil preparation and grading",
@@ -63,8 +69,14 @@ export const services: Service[] = [
     description:
       "Hardscaping adds structure, usability, and lasting value to your property. We design and build patios, retaining walls, seating areas, and stone features using quality materials and proper base preparation for durability.",
     icon: Blocks,
-    image: "/images/services/hardscaping.svg",
-    imageWide: "/images/services/hardscaping-wide.svg",
+    image: "/assets/images/services/backyard-hardscaping.webp",
+    heroImage: "/assets/images/services/hardscaping-hero.webp",
+    gallery: [
+      "/assets/images/projects/retaining-wall.webp",
+      "/assets/images/projects/stone-pathway.webp",
+    ],
+    imageAlt:
+      "Finished backyard hardscaping with a natural stone wall and planted borders",
     includes: [
       "Patios and seating areas",
       "Retaining and garden walls",
@@ -99,8 +111,14 @@ export const services: Service[] = [
     description:
       "Paver installation delivers a premium, durable surface for driveways, patios, and walkways. We focus on proper excavation, base compaction, and edge restraint so your pavers stay level and beautiful for years.",
     icon: Grid3x3,
-    image: "/images/services/paver-installation.svg",
-    imageWide: "/images/services/paver-installation-wide.svg",
+    image: "/assets/images/services/paver-walkway-installation.webp",
+    heroImage: "/assets/images/services/paver-installation-hero.webp",
+    gallery: [
+      "/assets/images/projects/paver-walkway.webp",
+      "/assets/images/projects/paver-patio.webp",
+    ],
+    imageAlt:
+      "Professionally installed stone paver walkway winding through a landscaped yard",
     includes: [
       "Driveways, patios, and walkways",
       "Excavation and base compaction",
@@ -135,8 +153,14 @@ export const services: Service[] = [
     description:
       "A well-built fence adds privacy, security, and definition to your property. We install wood, and modern fencing with solid posts and clean lines, built to withstand the elements and complement your landscape.",
     icon: Fence,
-    image: "/images/services/fence-installation.svg",
-    imageWide: "/images/services/fence-installation-wide.svg",
+    image: "/assets/images/services/wood-fence-installation.webp",
+    heroImage: "/assets/images/services/fence-installation-hero.webp",
+    gallery: [
+      "/assets/images/projects/wood-fence.webp",
+      "/assets/images/projects/modern-fence.webp",
+    ],
+    imageAlt:
+      "Professionally installed wood privacy fence beside a well-maintained garden",
     includes: [
       "Wood and modern fence styles",
       "Post setting and concrete footings",
@@ -171,8 +195,14 @@ export const services: Service[] = [
     description:
       "A properly designed irrigation system delivers the right amount of water to the right places, keeping your landscape healthy while conserving water. We install and repair sprinkler and drip systems with smart controllers for efficiency.",
     icon: Droplets,
-    image: "/images/services/irrigation-systems.svg",
-    imageWide: "/images/services/irrigation-systems-wide.svg",
+    image: "/assets/images/services/irrigation-system.webp",
+    heroImage: "/assets/images/services/irrigation-hero.webp",
+    gallery: [
+      "/assets/images/projects/irrigation-upgrade.webp",
+      "/assets/images/projects/drip-irrigation.webp",
+    ],
+    imageAlt:
+      "Lawn sprinkler system watering a healthy green residential lawn",
     includes: [
       "Sprinkler and drip system design",
       "Valves, zones, and controllers",
@@ -207,8 +237,14 @@ export const services: Service[] = [
     description:
       "A healthy natural lawn starts with proper preparation. We grade, amend the soil, and install quality sod or seed suited to your yard's sun and use, giving you a lush green lawn that establishes strong roots.",
     icon: Sprout,
-    image: "/images/services/natural-grass-installation.svg",
-    imageWide: "/images/services/natural-grass-installation-wide.svg",
+    image: "/assets/images/services/natural-lawn-installation.webp",
+    heroImage: "/assets/images/services/natural-grass-hero.webp",
+    gallery: [
+      "/assets/images/projects/natural-sod.webp",
+      "/assets/images/projects/garden-bed.webp",
+    ],
+    imageAlt:
+      "Freshly installed healthy natural grass lawn with a clean, manicured edge",
     includes: [
       "Grading and soil preparation",
       "Sod or seed installation",
@@ -243,8 +279,14 @@ export const services: Service[] = [
     description:
       "Artificial grass gives you a green lawn year-round with no watering, mowing, or muddy patches. We install realistic, durable turf over a compacted, well-draining base for a clean look that lasts.",
     icon: Layers,
-    image: "/images/services/artificial-grass-installation.svg",
-    imageWide: "/images/services/artificial-grass-installation-wide.svg",
+    image: "/assets/images/services/artificial-grass-installation.webp",
+    heroImage: "/assets/images/services/artificial-grass-hero.webp",
+    gallery: [
+      "/assets/images/projects/artificial-turf.webp",
+      "/assets/images/projects/artificial-turf-lawn.webp",
+    ],
+    imageAlt:
+      "Clean, even artificial grass lawn in a modern California backyard",
     includes: [
       "Base excavation and compaction",
       "Weed barrier and drainage",
@@ -279,8 +321,14 @@ export const services: Service[] = [
     description:
       "The right plants make a landscape feel alive. We design and install garden beds, trees, shrubs, and color plantings chosen for your light, soil, and maintenance preferences — creating gardens that flourish season after season.",
     icon: Flower2,
-    image: "/images/services/plants-garden-installation.svg",
-    imageWide: "/images/services/plants-garden-installation-wide.svg",
+    image: "/assets/images/services/garden-planting.webp",
+    heroImage: "/assets/images/services/plants-garden-hero.webp",
+    gallery: [
+      "/assets/images/projects/garden-bed.webp",
+      "/assets/images/projects/front-yard-landscaping.webp",
+    ],
+    imageAlt:
+      "Colorful flowers and shrubs planted in a freshly mulched garden bed",
     includes: [
       "Garden bed design and prep",
       "Tree, shrub, and flower planting",
@@ -315,8 +363,14 @@ export const services: Service[] = [
     description:
       "Consistent maintenance keeps your landscape healthy and looking its best. We offer dependable mowing, trimming, pruning, and seasonal care for residential and commercial properties on a schedule that works for you.",
     icon: Scissors,
-    image: "/images/services/landscape-maintenance.svg",
-    imageWide: "/images/services/landscape-maintenance-wide.svg",
+    image: "/assets/images/services/landscape-maintenance.webp",
+    heroImage: "/assets/images/services/maintenance-hero.webp",
+    gallery: [
+      "/assets/images/projects/lawn-maintenance.webp",
+      "/assets/images/projects/property-cleanup.webp",
+    ],
+    imageAlt:
+      "Landscaper mowing and maintaining a healthy, striped residential lawn",
     includes: [
       "Mowing, edging, and trimming",
       "Shrub and hedge pruning",
@@ -351,8 +405,14 @@ export const services: Service[] = [
     description:
       "Whether you're preparing to sell, moving in, or reclaiming an overgrown yard, our cleanup service clears debris, removes overgrowth, and resets your property to a clean, workable state.",
     icon: Trash2,
-    image: "/images/services/property-cleanup.svg",
-    imageWide: "/images/services/property-cleanup-wide.svg",
+    image: "/assets/images/services/property-cleanup.webp",
+    heroImage: "/assets/images/services/cleanup-hero.webp",
+    gallery: [
+      "/assets/images/projects/property-cleanup.webp",
+      "/assets/images/projects/backyard-transformation.webp",
+    ],
+    imageAlt:
+      "Yard cleanup with leaves and garden debris being cleared and hauled away",
     includes: [
       "Overgrowth and brush removal",
       "Leaf and debris cleanup",
@@ -387,8 +447,14 @@ export const services: Service[] = [
     description:
       "Ready for a full transformation? Our outdoor renovation service brings landscaping, hardscaping, planting, and irrigation together into one coordinated project that reinvents how you use your outdoor space.",
     icon: Hammer,
-    image: "/images/services/outdoor-renovations.svg",
-    imageWide: "/images/services/outdoor-renovations-wide.svg",
+    image: "/assets/images/services/outdoor-renovation.webp",
+    heroImage: "/assets/images/services/renovation-hero.webp",
+    gallery: [
+      "/assets/images/projects/backyard-transformation.webp",
+      "/assets/images/projects/front-yard-landscaping.webp",
+    ],
+    imageAlt:
+      "Full backyard transformation combining a lawn, planting, and hardscape features",
     includes: [
       "Full yard redesign",
       "Combined hardscape and softscape",

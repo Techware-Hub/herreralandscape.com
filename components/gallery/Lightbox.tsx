@@ -98,7 +98,7 @@ export default function Lightbox({ projects, index, onClose, onNavigate }: Light
             <div className="relative aspect-[3/2] w-full">
               <Image
                 src={project.image}
-                alt={`${project.title} — ${project.category} project in ${project.location}`}
+                alt={project.imageAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 900px"
                 className="object-cover"

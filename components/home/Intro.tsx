@@ -20,8 +20,8 @@ export default function Intro() {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
                 <Image
-                  src="/images/about/about-1.svg"
-                  alt="Herrera Landscape crew working on a residential landscaping project"
+                  src="/assets/images/about/completed-residential-landscape.webp"
+                  alt="Completed residential landscape with a white home, lawn, and flowering shrubs"
                   fill
                   sizes="(max-width: 1024px) 100vw, 560px"
                   className="object-cover"
@@ -30,8 +30,8 @@ export default function Intro() {
               <div className="absolute -bottom-6 -right-4 hidden w-40 overflow-hidden rounded-2xl border-4 border-beige-50 shadow-lg sm:block">
                 <div className="relative aspect-square">
                   <Image
-                    src="/images/services/paver-installation.svg"
-                    alt="Close-up of a completed paver installation"
+                    src="/assets/images/about/landscaper-working.webp"
+                    alt="Professional landscaper planting in a garden bed"
                     fill
                     sizes="160px"
                     className="object-cover"

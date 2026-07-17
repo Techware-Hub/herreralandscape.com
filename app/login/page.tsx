@@ -29,8 +29,8 @@ export default async function LoginPage({
       {/* Visual side */}
       <div className="relative hidden lg:block">
         <Image
-          src="/images/hero/hero-2.svg"
-          alt="Herrera Landscape outdoor project"
+          src="/assets/images/auth/residential-landscaping.webp"
+          alt="Premium residential landscaping with mature plants and a garden setting"
           fill
           sizes="50vw"
           className="object-cover"

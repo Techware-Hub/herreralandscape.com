@@ -13,8 +13,14 @@ export interface Service {
   /** Longer intro paragraph for the detail page */
   description: string;
   icon: LucideIcon;
+  /** Card image (4:3) */
   image: string;
-  imageWide: string;
+  /** Wide banner image for the detail-page hero */
+  heroImage: string;
+  /** Two supporting images shown on the detail page */
+  gallery: [string, string];
+  /** Descriptive alt text for the primary image */
+  imageAlt: string;
   /** Bullet list of what's included */
   includes: string[];
   /** Key benefits */
@@ -40,9 +46,13 @@ export interface Project {
   location: string;
   description: string;
   image: string;
+  /** Descriptive alt text */
+  imageAlt: string;
   /** Optional before/after images */
   before?: string;
   after?: string;
+  /** Marks a project as featured for prominent placement */
+  featured?: boolean;
 }
 
 export interface Testimonial {

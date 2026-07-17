@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import PageHero from "@/components/common/PageHero";
 import SectionHeading from "@/components/common/SectionHeading";
@@ -29,8 +30,8 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Get in Touch"
         subtitle="Have a question or ready to start a project? Reach out and we'll be glad to help. We serve Sunnyvale and the surrounding Bay Area."
-        image="/images/services/landscaping-wide.svg"
-        imageAlt="Landscaping project in Sunnyvale"
+        image="/assets/images/contact/garden-walkway.webp"
+        imageAlt="Landscaped garden courtyard with a paved walkway and seating"
         crumbs={[{ name: "Contact", href: "/contact" }]}
       />
 
@@ -132,30 +133,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map placeholder */}
+      {/* Service-area image band (a Google Map embed can be added here later) */}
       <section className="pb-16 sm:pb-20">
         <div className="container-page">
           <div className="relative aspect-[21/9] overflow-hidden rounded-3xl border border-stone-200 shadow-sm">
-            <div
-              className="absolute inset-0"
-              style={{ background: "linear-gradient(135deg, #e7efca, #97b23c 60%, #2b5320)" }}
+            <Image
+              src="/assets/images/contact/landscaped-front-yard.webp"
+              alt="Landscaped front yard with garden plants and a stone path in a California neighborhood"
+              fill
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              className="object-cover"
             />
-            <div
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage:
-                  "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
-                backgroundSize: "48px 48px",
-              }}
-              aria-hidden
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-forest-900">
-              <MapPin className="h-10 w-10 text-forest-700" aria-hidden />
-              <p className="mt-2 font-display text-xl font-semibold">
-                {siteConfig.location.city}, {siteConfig.location.regionShort}
-              </p>
-              <p className="mt-1 text-sm text-forest-800/80">
-                Google Maps embed placeholder — add your business map here.
+            <div className="absolute inset-0 bg-gradient-to-t from-forest-900/75 via-forest-900/25 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 p-6 text-white">
+              <MapPin className="h-8 w-8 text-grass-300" aria-hidden />
+              <p className="font-display text-xl font-semibold">
+                Serving {siteConfig.location.city}, {siteConfig.location.regionShort} &amp; the
+                surrounding Bay Area
               </p>
             </div>
           </div>

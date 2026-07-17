@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: [{ url: "/images/og.svg", width: 1200, height: 630, alt: siteConfig.name }],
+    images: [{ url: "/assets/images/backgrounds/og-home.webp", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/images/og.svg"],
+    images: ["/assets/images/backgrounds/og-home.webp"],
   },
   robots: {
     index: true,

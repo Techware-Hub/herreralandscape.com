@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import SmartImage from "@/components/common/SmartImage";
 import type { Service } from "@/types";
 
 export default function ServiceCard({ service }: { service: Service }) {
@@ -11,9 +11,9 @@ export default function ServiceCard({ service }: { service: Service }) {
       className="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-forest-200 hover:shadow-lg focus-visible:-translate-y-1"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Image
+        <SmartImage
           src={service.image}
-          alt={`${service.title} — Herrera Landscape service in Sunnyvale`}
+          alt={service.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
           className="object-cover transition-transform duration-500 group-hover:scale-105"

@@ -45,8 +45,8 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="Rooted in Quality, Built on Trust"
         subtitle="Herrera Landscape is a local landscaping and hardscaping company dedicated to transforming outdoor spaces across Sunnyvale and the Bay Area."
-        image="/images/about/about-2.svg"
-        imageAlt="Completed landscaping project by Herrera Landscape"
+        image="/assets/images/about/about-banner.webp"
+        imageAlt="Residential home with a landscaped front lawn"
         crumbs={[{ name: "About", href: "/about" }]}
       />
 
@@ -57,8 +57,8 @@ export default function AboutPage() {
             <Reveal>
               <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl shadow-xl">
                 <Image
-                  src="/images/team/owner.svg"
-                  alt={`${siteConfig.owner}, owner of Herrera Landscape`}
+                  src="/assets/images/about/landscaper-working.webp"
+                  alt="Professional landscaper carefully planting in a garden bed"
                   fill
                   sizes="(max-width: 1024px) 100vw, 440px"
                   className="object-cover"

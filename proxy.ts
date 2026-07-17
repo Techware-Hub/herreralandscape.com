@@ -49,6 +49,6 @@ export const config = {
     /*
      * Match all request paths except static assets and images.
      */
-    "/((?!_next/static|_next/image|favicon.ico|images|.*\\.svg$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|assets|images|.*\\.svg$).*)",
   ],
 };

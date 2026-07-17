@@ -139,6 +139,21 @@ proxy.ts            session refresh + dashboard route protection (Next 16 "proxy
 
 ---
 
+## 🖼️ Imagery & Licensing
+
+> **Current website imagery is licensed stock photography (Unsplash License) and must not be
+> represented as completed Herrera Landscape projects unless approved by the client.** Replace it
+> with the client's own original project photographs before presenting the work as real.
+
+- All photos are downloaded, cropped, and optimized to **WebP** under `public/assets/images/**`
+  (hero, about, services, projects, before-after, contact, auth, backgrounds).
+- Image paths and alt text live in the data files (`data/services.ts`, `data/projects.ts`,
+  `data/dashboard.ts`) — not hardcoded in components.
+- To re-fetch or change the image set, edit the manifest in `scripts/fetch-images.mjs` and run
+  `node scripts/fetch-images.mjs` (requires network access to images.unsplash.com).
+- Missing images degrade gracefully via `components/common/SmartImage.tsx` (a branded fallback),
+  though all current paths are verified.
+
 ## 🖼️ Replacing Placeholder Content
 
 Everything is designed to be easily swapped before launch:

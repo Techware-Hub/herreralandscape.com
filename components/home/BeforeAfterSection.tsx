@@ -13,13 +13,14 @@ export default function BeforeAfterSection() {
         />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <BeforeAfterSlider
-            beforeSrc="/images/before-after/before.svg"
-            afterSrc="/images/before-after/after.svg"
-            beforeAlt="Overgrown yard before landscaping"
-            afterAlt="Professionally landscaped yard after Herrera Landscape"
+            beforeSrc="/assets/images/before-after/overgrown-yard-before.webp"
+            afterSrc="/assets/images/before-after/landscaped-yard-after.webp"
+            beforeAlt="Overgrown, worn yard before landscaping work"
+            afterAlt="Clean, healthy green lawn after professional landscaping"
           />
           <p className="mt-4 text-center text-sm text-stone-500">
-            Placeholder images — replace with a real before/after project photo set.
+            Demonstration images shown for illustration — replace with a real Herrera Landscape
+            before/after project set before launch.
           </p>
         </Reveal>
       </div>

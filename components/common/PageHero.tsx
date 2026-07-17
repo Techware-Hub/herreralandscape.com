@@ -17,7 +17,7 @@ export default function PageHero({
   title,
   subtitle,
   eyebrow,
-  image = "/images/services/landscaping-wide.svg",
+  image = "/assets/images/backgrounds/garden-path-banner.webp",
   imageAlt = "",
   crumbs,
   children,

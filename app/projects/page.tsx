@@ -25,9 +25,9 @@ export default function ProjectsPage() {
       <PageHero
         eyebrow="Our Work"
         title="Projects & Gallery"
-        subtitle="A selection of landscaping and hardscaping projects we've completed. Filter by category and click any project to view it larger. Photos shown are placeholders and will be replaced with real project images."
-        image="/images/projects/project-09.svg"
-        imageAlt="Full yard transformation project"
+        subtitle="A selection of landscaping and hardscaping work across Sunnyvale and the Bay Area. Filter by category and click any project to view it larger."
+        image="/assets/images/backgrounds/projects-banner.webp"
+        imageAlt="Landscaped garden bordered by a white picket fence"
         crumbs={[{ name: "Projects", href: "/projects" }]}
       />
 
@@ -46,10 +46,10 @@ export default function ProjectsPage() {
           />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <BeforeAfterSlider
-              beforeSrc="/images/before-after/before.svg"
-              afterSrc="/images/before-after/after.svg"
-              beforeAlt="Yard before landscaping"
-              afterAlt="Yard after landscaping by Herrera Landscape"
+              beforeSrc="/assets/images/before-after/overgrown-yard-before.webp"
+              afterSrc="/assets/images/before-after/landscaped-yard-after.webp"
+              beforeAlt="Overgrown, worn yard before landscaping work"
+              afterAlt="Clean, healthy green lawn after professional landscaping"
             />
           </Reveal>
         </div>

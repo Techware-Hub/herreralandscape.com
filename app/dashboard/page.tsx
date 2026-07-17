@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 import {
   FileText,
@@ -12,6 +13,7 @@ import {
   Download,
   Mail,
   Phone,
+  Image as ImageIcon,
 } from "lucide-react";
 import DashboardShell from "@/components/dashboard/DashboardShell";
 import { createClient } from "@/lib/supabase/server";
@@ -24,6 +26,7 @@ import {
   demoDocuments,
   demoMessages,
   demoInvoices,
+  demoPhotos,
 } from "@/data/dashboard";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
@@ -154,20 +157,46 @@ export default async function DashboardPage() {
 
       {/* Projects */}
       <Card id="projects" title="Projects" icon={FolderKanban}>
-        <div className="space-y-4">
+        <div className="grid gap-4 sm:grid-cols-2">
           {demoProjects.map((p) => (
-            <div key={p.id} className="rounded-xl border border-stone-200 p-4">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="font-semibold text-forest-900">{p.name}</p>
-                  <p className="text-xs text-stone-500">Updated {p.updatedOn}</p>
+            <div key={p.id} className="overflow-hidden rounded-xl border border-stone-200">
+              <div className="relative aspect-[16/9]">
+                <Image
+                  src={p.image}
+                  alt={p.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 300px"
+                  className="object-cover"
+                />
+                <span className="absolute right-2 top-2">
+                  <Badge label={p.stage} />
+                </span>
+              </div>
+              <div className="p-4">
+                <p className="font-semibold text-forest-900">{p.name}</p>
+                <p className="text-xs text-stone-500">Updated {p.updatedOn}</p>
+                <div className="mt-3 h-2 overflow-hidden rounded-full bg-stone-100">
+                  <div className="h-full rounded-full bg-grass-500" style={{ width: `${p.progress}%` }} />
                 </div>
-                <Badge label={p.stage} />
+                <p className="mt-1 text-right text-xs text-stone-500">{p.progress}% complete</p>
               </div>
-              <div className="mt-3 h-2 overflow-hidden rounded-full bg-stone-100">
-                <div className="h-full rounded-full bg-grass-500" style={{ width: `${p.progress}%` }} />
-              </div>
-              <p className="mt-1 text-right text-xs text-stone-500">{p.progress}% complete</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* Uploaded photos */}
+      <Card id="photos" title="Uploaded Project Photos" icon={ImageIcon}>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {demoPhotos.map((photo) => (
+            <div key={photo.src} className="relative aspect-square overflow-hidden rounded-xl border border-stone-200">
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                sizes="(max-width: 640px) 50vw, 200px"
+                className="object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
           ))}
         </div>

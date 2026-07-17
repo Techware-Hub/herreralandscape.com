@@ -8,9 +8,18 @@ import Button from "@/components/common/Button";
 import { siteConfig, telHref } from "@/lib/site";
 
 const slides = [
-  { src: "/images/hero/hero-1.svg", alt: "Beautiful residential landscape in Sunnyvale, California" },
-  { src: "/images/hero/hero-2.svg", alt: "Outdoor space transformation by Herrera Landscape" },
-  { src: "/images/hero/hero-3.svg", alt: "Hardscape and paver installation project" },
+  {
+    src: "/assets/images/hero/landscape-hero-sunnyvale.webp",
+    alt: "Landscaped residential property with a healthy green lawn and mature trees in Sunnyvale, California",
+  },
+  {
+    src: "/assets/images/hero/residential-landscape-design.webp",
+    alt: "Designed residential garden with a pergola, planting beds, and a walkway",
+  },
+  {
+    src: "/assets/images/hero/backyard-hardscaping.webp",
+    alt: "Completed backyard hardscaping with a stone paver patio and planted borders",
+  },
 ];
 
 const trustPoints = [

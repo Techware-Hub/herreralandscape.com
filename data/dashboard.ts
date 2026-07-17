@@ -18,6 +18,8 @@ export interface ProjectStatus {
   stage: "Planning" | "Scheduled" | "In Progress" | "Completed";
   progress: number; // 0-100
   updatedOn: string;
+  image: string;
+  imageAlt: string;
 }
 
 export interface Appointment {
@@ -80,6 +82,8 @@ export const demoProjects: ProjectStatus[] = [
     stage: "In Progress",
     progress: 60,
     updatedOn: "Jul 14, 2026",
+    image: "/assets/images/projects/backyard-transformation.webp",
+    imageAlt: "Backyard transformation project in progress",
   },
   {
     id: "P-197",
@@ -87,7 +91,17 @@ export const demoProjects: ProjectStatus[] = [
     stage: "Completed",
     progress: 100,
     updatedOn: "Mar 28, 2026",
+    image: "/assets/images/projects/front-yard-landscaping.webp",
+    imageAlt: "Completed front yard landscaping project",
   },
+];
+
+/** Sample uploaded project photos shown on the dashboard. */
+export const demoPhotos = [
+  { src: "/assets/images/projects/paver-walkway.webp", alt: "Paver walkway installation photo" },
+  { src: "/assets/images/projects/garden-bed.webp", alt: "Garden bed planting photo" },
+  { src: "/assets/images/projects/retaining-wall.webp", alt: "Retaining wall build photo" },
+  { src: "/assets/images/projects/lawn-maintenance.webp", alt: "Lawn maintenance photo" },
 ];
 
 export const demoAppointments: Appointment[] = [

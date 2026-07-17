@@ -1,0 +1,342 @@
+{
+  "generated": "run",
+  "count": 56,
+  "images": [
+    {
+      "id": "1599365726864-ac222011504a",
+      "out": "/assets/images/hero/landscape-hero-sunnyvale.webp",
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "1647367918308-56b110dc969d",
+      "out": "/assets/images/hero/residential-landscape-design.webp",
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "1780838446281-9394772d07a8",
+      "out": "/assets/images/hero/backyard-hardscaping.webp",
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "1622383563227-04401ab4e5ea",
+      "out": "/assets/images/about/landscaper-working.webp",
+      "w": 1000,
+      "h": 1200
+    },
+    {
+      "id": "1631149784601-8e6c266b046a",
+      "out": "/assets/images/about/completed-residential-landscape.webp",
+      "w": 1200,
+      "h": 900
+    },
+    {
+      "id": "1597868165956-03a6827955b1",
+      "out": "/assets/images/about/garden-installation.webp",
+      "w": 1200,
+      "h": 900
+    },
+    {
+      "id": "1760649004090-b70cea9cce39",
+      "out": "/assets/images/about/about-banner.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1685736092106-11d0099c5142",
+      "out": "/assets/images/services/residential-landscape-design.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1780478243212-22537df4d319",
+      "out": "/assets/images/services/backyard-hardscaping.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1761637823407-ef47925c2714",
+      "out": "/assets/images/services/paver-walkway-installation.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1578359689698-c6113e8cf814",
+      "out": "/assets/images/services/wood-fence-installation.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1523904200128-4f0fd6d026ad",
+      "out": "/assets/images/services/irrigation-system.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1558904541-efa843a96f01",
+      "out": "/assets/images/services/natural-lawn-installation.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1544914379-806667cd9489",
+      "out": "/assets/images/services/artificial-grass-installation.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1536235918060-dd0b5d3d0dda",
+      "out": "/assets/images/services/garden-planting.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1458245201577-fc8a130b8829",
+      "out": "/assets/images/services/landscape-maintenance.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1634081727680-fa43e3237d5a",
+      "out": "/assets/images/services/property-cleanup.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1681853108586-f29b4ef5c0fb",
+      "out": "/assets/images/services/outdoor-renovation.webp",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "id": "1701750204317-213f30c7fd6d",
+      "out": "/assets/images/services/landscaping-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1767263318272-01a10851d5d2",
+      "out": "/assets/images/services/hardscaping-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1759745063503-921e354f5f55",
+      "out": "/assets/images/services/paver-installation-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1727703025566-be0b383b6d96",
+      "out": "/assets/images/services/fence-installation-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1600266189529-58cc5dc3d63d",
+      "out": "/assets/images/services/irrigation-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1601182977411-ef239c7ab4a3",
+      "out": "/assets/images/services/natural-grass-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1631293624445-55f390cef754",
+      "out": "/assets/images/services/artificial-grass-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1651029982967-7faf59d2a8b7",
+      "out": "/assets/images/services/plants-garden-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1590820292118-e256c3ac2676",
+      "out": "/assets/images/services/maintenance-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1730191948878-80ecf32ed66b",
+      "out": "/assets/images/services/cleanup-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1749803915455-a7642520d0d3",
+      "out": "/assets/images/services/renovation-hero.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1702961339823-812f512a22e5",
+      "out": "/assets/images/projects/front-yard-landscaping.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1722725648713-f73f1cd1f5b7",
+      "out": "/assets/images/projects/backyard-transformation.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1663185776834-0c86f6ced17b",
+      "out": "/assets/images/projects/paver-walkway.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1780128541130-03a606d9a700",
+      "out": "/assets/images/projects/paver-patio.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1779632069298-4be3693f173c",
+      "out": "/assets/images/projects/retaining-wall.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1743208552250-47e51d38c9f2",
+      "out": "/assets/images/projects/stone-pathway.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1776283636519-3f2ce27746ea",
+      "out": "/assets/images/projects/wood-fence.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1655979339871-f62355759179",
+      "out": "/assets/images/projects/modern-fence.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1502481686408-d428268c24ff",
+      "out": "/assets/images/projects/artificial-turf.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1651220215941-5093b0d0d755",
+      "out": "/assets/images/projects/artificial-turf-lawn.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1734303023491-db8037a21f09",
+      "out": "/assets/images/projects/natural-sod.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1541955193702-9ca03b1bb11a",
+      "out": "/assets/images/projects/irrigation-upgrade.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1718565524318-b58b8b86b813",
+      "out": "/assets/images/projects/drip-irrigation.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1662063750282-bd23d490ad96",
+      "out": "/assets/images/projects/garden-bed.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1628340981113-fe1949fe5cc0",
+      "out": "/assets/images/projects/lawn-maintenance.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1692955523298-c361598bee0f",
+      "out": "/assets/images/projects/property-cleanup.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1595797623546-5a85a990ca6c",
+      "out": "/assets/images/before-after/overgrown-yard-before.webp",
+      "w": 1200,
+      "h": 800
+    },
+    {
+      "id": "1650316305075-cff140a81af5",
+      "out": "/assets/images/before-after/landscaped-yard-after.webp",
+      "w": 1200,
+      "h": 800
+    },
+    {
+      "id": "1772313952254-dae19b91854b",
+      "out": "/assets/images/backgrounds/california-neighborhood.webp",
+      "w": 1200,
+      "h": 800
+    },
+    {
+      "id": "1783566255093-90ede776e8f5",
+      "out": "/assets/images/contact/garden-walkway.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1723079637087-1d4aabcd5c63",
+      "out": "/assets/images/contact/landscaped-front-yard.webp",
+      "w": 1000,
+      "h": 750
+    },
+    {
+      "id": "1694885186013-5aa7d91ae5d5",
+      "out": "/assets/images/backgrounds/quote-project.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1666940089209-76cc8fd41906",
+      "out": "/assets/images/auth/residential-landscaping.webp",
+      "w": 1200,
+      "h": 1500
+    },
+    {
+      "id": "1722881445875-bdd5f4d9e6fa",
+      "out": "/assets/images/backgrounds/projects-banner.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1758414335865-17baa986b85b",
+      "out": "/assets/images/backgrounds/services-banner.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1769581243975-d01f30d62892",
+      "out": "/assets/images/backgrounds/garden-path-banner.webp",
+      "w": 1600,
+      "h": 760
+    },
+    {
+      "id": "1695151753349-ae0f062d0a8d",
+      "out": "/assets/images/backgrounds/foliage-texture.webp",
+      "w": 1600,
+      "h": 900
+    }
+  ]
+}

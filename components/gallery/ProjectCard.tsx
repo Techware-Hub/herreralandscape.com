@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { MapPin, Expand } from "lucide-react";
+import SmartImage from "@/components/common/SmartImage";
 import type { Project } from "@/types";
 
 export default function ProjectCard({
@@ -18,9 +18,9 @@ export default function ProjectCard({
       className="group relative block w-full overflow-hidden rounded-2xl border border-stone-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Image
+        <SmartImage
           src={project.image}
-          alt={`${project.title} — ${project.category} project in ${project.location}`}
+          alt={project.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
           className="object-cover transition-transform duration-500 group-hover:scale-105"

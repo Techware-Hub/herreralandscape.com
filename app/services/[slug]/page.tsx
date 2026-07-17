@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title: `${service.title} | Herrera Landscape`,
       description: service.excerpt,
       url: `${siteConfig.url}/services/${service.slug}`,
-      images: [{ url: service.imageWide, width: 1600, height: 700, alt: service.title }],
+      images: [{ url: service.heroImage, width: 1600, height: 760, alt: service.imageAlt }],
     },
   };
 }
@@ -61,8 +62,8 @@ export default async function ServiceDetailPage({ params }: Params) {
         eyebrow="Service"
         title={service.title}
         subtitle={service.description}
-        image={service.imageWide}
-        imageAlt={`${service.title} by Herrera Landscape`}
+        image={service.heroImage}
+        imageAlt={service.imageAlt}
         crumbs={[
           { name: "Services", href: "/services" },
           { name: service.title, href: `/services/${service.slug}` },
@@ -105,6 +106,23 @@ export default async function ServiceDetailPage({ params }: Params) {
                 </ul>
               </div>
             </Reveal>
+          </div>
+
+          {/* Supporting images — a closer look at this service */}
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {service.gallery.map((src, i) => (
+              <Reveal key={src} delay={i * 0.1}>
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-stone-200 shadow-sm">
+                  <Image
+                    src={src}
+                    alt={`${service.title} — example ${i + 1}: ${service.imageAlt}`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

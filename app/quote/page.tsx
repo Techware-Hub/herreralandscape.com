@@ -31,8 +31,8 @@ export default function QuotePage() {
         eyebrow="Free Estimate"
         title="Request a Free Quote"
         subtitle="Tell us about your project and we'll provide a clear, no-pressure estimate. Prefer to talk? Call, text, or WhatsApp us anytime."
-        image="/images/services/outdoor-renovations-wide.svg"
-        imageAlt="Outdoor renovation project"
+        image="/assets/images/backgrounds/quote-project.webp"
+        imageAlt="Completed backyard landscaping project with a pergola and patio"
         crumbs={[{ name: "Request a Quote", href: "/quote" }]}
       />
 

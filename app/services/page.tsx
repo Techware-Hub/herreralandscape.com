@@ -31,8 +31,8 @@ export default function ServicesPage() {
         eyebrow="Our Services"
         title="Complete Landscaping & Hardscaping Services"
         subtitle="From design and installation to ongoing care, we offer everything you need to build and maintain a beautiful outdoor space in Sunnyvale and the Bay Area."
-        image="/images/services/hardscaping-wide.svg"
-        imageAlt="Hardscaping and landscaping work in progress"
+        image="/assets/images/backgrounds/services-banner.webp"
+        imageAlt="Landscaped garden with stone steps and flowering plants"
         crumbs={[{ name: "Services", href: "/services" }]}
       >
         <Button href="/quote" variant="gold" size="lg">
@@ -58,8 +58,8 @@ export default function ServicesPage() {
                     <div className={reversed ? "lg:order-2" : ""}>
                       <div className="relative aspect-[16/10] overflow-hidden rounded-3xl shadow-lg">
                         <Image
-                          src={service.imageWide}
-                          alt={`${service.title} service by Herrera Landscape`}
+                          src={service.heroImage}
+                          alt={service.imageAlt}
                           fill
                           sizes="(max-width: 1024px) 100vw, 560px"
                           className="object-cover"

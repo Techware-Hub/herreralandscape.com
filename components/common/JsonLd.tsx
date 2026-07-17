@@ -43,7 +43,7 @@ export function LocalBusinessSchema() {
     url: siteConfig.url,
     telephone: siteConfig.phoneIntl,
     email: siteConfig.email,
-    image: `${siteConfig.url}/images/og.svg`,
+    image: `${siteConfig.url}/assets/images/backgrounds/og-home.webp`,
     founder: { "@type": "Person", name: siteConfig.owner },
     priceRange: "$$",
     areaServed: siteConfig.serviceAreas.map((a) => ({
