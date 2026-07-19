@@ -43,3 +43,7 @@ next-env.d.ts
 # image build artifacts
 .montage*.jpg
 .img-tmp*/
+
+# original (uncompressed) source images kept locally, not deployed
+.image-originals/
+.quality-check.jpg

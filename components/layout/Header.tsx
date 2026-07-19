@@ -66,7 +66,7 @@ export default function Header() {
                     aria-expanded={servicesOpen}
                     aria-haspopup="true"
                     className={cn(
-                      "flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                      "flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium transition-colors",
                       isActive("/services")
                         ? "text-forest-800"
                         : "text-stone-700 hover:text-forest-700"
@@ -108,7 +108,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                    "rounded-full px-3 py-2 text-sm font-medium transition-colors",
                     isActive(link.href)
                       ? "text-forest-800"
                       : "text-stone-700 hover:text-forest-700"
