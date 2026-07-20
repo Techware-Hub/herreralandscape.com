@@ -8,14 +8,23 @@ import GalleryLightbox from "./gallery-lightbox";
 
 interface GalleryGridProps {
   images: GalleryImage[];
+  /**
+   * How many leading images to eagerly preload. Use the default for
+   * above-the-fold grids (the /gallery page); pass 0 when the grid sits below
+   * the fold (the homepage section) so every image lazy-loads instead.
+   */
+  priorityCount?: number;
 }
 
 /**
  * Responsive image-only gallery grid.
  * 1 column on mobile, 2 on tablet, 3 on desktop, 4 on large screens.
  * No titles, captions, filenames, or categories are rendered — images only.
+ *
+ * Owns the lightbox state, so any consumer gets full lightbox behaviour
+ * (prev/next, Escape, arrow keys, counter) without duplicating logic.
  */
-export default function GalleryGrid({ images }: GalleryGridProps) {
+export default function GalleryGrid({ images, priorityCount = 4 }: GalleryGridProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
 
@@ -63,7 +72,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   alt={image.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                  priority={index < 4}
+                  priority={index < priorityCount}
                   className={`object-cover transition-all duration-500 ease-out group-hover:scale-[1.06] ${
                     loaded[index] ? "opacity-100" : "opacity-0"
                   }`}

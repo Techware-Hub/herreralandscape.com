@@ -7,6 +7,7 @@ import BeforeAfterSection from "@/components/home/BeforeAfterSection";
 import ProcessSection from "@/components/home/ProcessSection";
 import Testimonials from "@/components/home/Testimonials";
 import ServiceArea from "@/components/home/ServiceArea";
+import HomeGallery from "@/components/home/home-gallery";
 import QuoteFormSection from "@/components/home/QuoteFormSection";
 import CTASection from "@/components/common/CTASection";
 import { FaqSchema } from "@/components/common/JsonLd";
@@ -25,6 +26,7 @@ export default function HomePage() {
       <ProcessSection />
       <Testimonials />
       <ServiceArea />
+      <HomeGallery />
       <QuoteFormSection />
       <CTASection />
     </>
